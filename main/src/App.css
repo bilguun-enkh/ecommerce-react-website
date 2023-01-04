@@ -1,0 +1,54 @@
+.container {
+  width: 1440px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-bar-2nd-div {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchContainer {
+  background: #003F62;
+}
+
+.searchDiv {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchDivLogo {
+  width: 140px;
+  height: 39px;
+}
+
+.logoDiv {
+  display: flex;
+  width: 500px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBox {
+  background-color: white;
+  width: 438px;
+  height: 56px;
+  border-radius: 20px;
+}
+.register {
+  align-items: center;
+  width: 300px;
+  display: flex;
+  color: white;
+}
