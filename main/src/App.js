@@ -1,6 +1,8 @@
 import { Truck, GeoAlt, Heart, Person, CartFill } from 'react-bootstrap-icons';
 import { Button, Dropdown, Navbar } from 'react-bootstrap'
 import './App.css';
+import MainMenu from './components/MainMenu';
+
 
 function App() {
   return (
@@ -48,12 +50,18 @@ function App() {
               <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
+          <MainMenu />
           <div className='browse-free-return'>
             <p>30 Days Free Return</p>
           </div>
         </div>
       </div>
+      <div className='my-container'>
+        <div className='carousel-div'></div>
+      </div>
     </div>
+
+
   );
 }
 
