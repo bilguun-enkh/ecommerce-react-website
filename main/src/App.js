@@ -1,5 +1,6 @@
-import './App.css';
 import { Truck, GeoAlt, Heart, Person, CartFill } from 'react-bootstrap-icons';
+import { Button, Dropdown, Navbar } from 'react-bootstrap'
+import './App.css';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             <img src="electronLogo.png" alt="electronlogo" className="searchDivLogo"></img>
             <div className='searchBox'>
               <input placeholder='Search any things' className="searchInput"></input>
-              <button className="search-btn">Search</button>
+              <Button className="search-btn">Search</Button>
             </div>
           </div>
           <div className='register'>
@@ -34,22 +35,22 @@ function App() {
         </div>
       </div>
 
-      <div className='container'>
+      <div className='browser-container'>
         <div className='browse-div'>
-          <div class="btn-group">
-            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Action
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Separated link</a></li>
-            </ul>
+          <Dropdown>
+            <Dropdown.Toggle id="dropdown-basic" className='my-btn'>
+              Browse categories
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+          <div className='browse-free-return'>
+            <p>30 Days Free Return</p>
           </div>
-          <div></div>
-          <div></div>
         </div>
       </div>
     </div>
