@@ -1,7 +1,9 @@
-import { Truck, GeoAlt, Heart, Person, CartFill } from 'react-bootstrap-icons';
-import { Button, Dropdown, Navbar } from 'react-bootstrap'
 import './App.css';
+import { Truck, GeoAlt, Heart, Person, CartFill} from 'react-bootstrap-icons';
+import { Button, Dropdown, Navbar } from 'react-bootstrap'
 import MainMenu from './components/MainMenu';
+import CarouselFunc from './components/Carousel';
+import { BrowseCategories } from './components/BrowseCategories';
 
 
 function App() {
@@ -39,17 +41,7 @@ function App() {
 
       <div className='browser-container'>
         <div className='browse-div'>
-          <Dropdown>
-            <Dropdown.Toggle id="dropdown-basic" className='my-btn'>
-              Browse categories
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+          <BrowseCategories />
           <MainMenu />
           <div className='browse-free-return'>
             <p>30 Days Free Return</p>
@@ -57,7 +49,7 @@ function App() {
         </div>
       </div>
       <div className='my-container'>
-        <div className='carousel-div'></div>
+          <CarouselFunc />
       </div>
     </div>
 
