@@ -1,5 +1,6 @@
 const menus = [
     {
+        id: 1,
         title: 'Home',
         position: 1,
         children: [{
@@ -11,6 +12,7 @@ const menus = [
         ]
     },
     {
+        id: 2,
         title: 'Catalog',
         position: 2,
         children: [
@@ -23,11 +25,13 @@ const menus = [
         ]
     },
     {
+        id: 3,
         title: 'Blog',
         position: 3,
         children: []
     },
     {
+        id: 4,
         title: 'Pages',
         position: 4,
         children: [
@@ -43,6 +47,7 @@ const menus = [
         ]
     },
     {
+        id: 5,
         title: 'About us',
         position: 5,
         children: []
