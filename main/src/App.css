@@ -131,6 +131,16 @@
   background: #EDA415;
 }
 
+.menu-div {
+  margin-right: 500px;
+}
+
+.nav-link {
+  padding: 15px 15px !important;
+  font-size: 16px !important;
+  color: black !important;
+}
+
 .my-btn {
   width: 218px;
   height: 70px;
@@ -165,9 +175,11 @@
 }
 
 .carousel-div {
+  position: relative;
   border: black 1px solid;
   height: 394px;
 }
+
 .carousel-second-div {
   height: 400px;
 }
@@ -175,9 +187,43 @@
 .carousel-img {
   width: 350px;
   position: relative;
-  left: 932px;
-  top: 38px;
+  left: 900px;
+  top: 100px;
 }
-.test2 {
+
+.carousel-inner {
   height: 500px;
+}
+
+.carousel-caption {
+  text-align: start !important;
+  width: 500px;
+  padding: 0 !important;
+  margin-top: 30px !important;
+  bottom: -50px !important;
+}
+
+.carousel-indicators {
+  justify-content: start !important;
+  height: 50px;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #EDA415;
+}
+.carousel-header{
+  color: #1B5A7D;
+}
+.carousel-paragraph {
+  width: 400px;
+}
+.carousel-shop-btn {
+  position: absolute;
+  bottom: 70px;
+  left: 220px;
+}
+.carousel-view-btn {
+  position: absolute;
+  bottom: 70px;
+  left: 320px;
 }

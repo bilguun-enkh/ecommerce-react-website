@@ -1,7 +1,16 @@
-import { Button, Dropdown, Navbar } from 'react-bootstrap'
+import { Dropdown } from 'react-bootstrap'
+import categories from '../data/categories'
 
 
 export function BrowseCategories() {
+
+    // const BrowseCatSubMenus = categories.maps(BrowseCatSubMenus => {
+    //     return (
+    //         <BrowseCatSubMenu title={BrowseCatSubMenu.children} />
+    //     )
+    // })
+
+
     return (
         <Dropdown>
             <Dropdown.Toggle id="dropdown-basic" className='my-btn'>

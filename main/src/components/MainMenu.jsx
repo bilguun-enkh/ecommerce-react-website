@@ -15,7 +15,7 @@ export default function MainMenu() {
         )
     })
     return (
-        <div className='test'>
+        <div className='menu-div'>
             <Navbar expand='lg'>
                 {subMenus}
             </Navbar>
