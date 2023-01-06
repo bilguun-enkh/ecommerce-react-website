@@ -1,9 +1,10 @@
 import './App.css';
 import { Truck, GeoAlt, Heart, Person, CartFill } from 'react-bootstrap-icons';
-import { Button, Dropdown, Navbar } from 'react-bootstrap'
+import { Button} from 'react-bootstrap'
 import MainMenu from './components/MainMenu';
 import CarouselFunc from './components/Carousel';
 import { BrowseCategories } from './components/BrowseCategories';
+import { ThreeCarousel } from './components/ThreeCarousel';
 
 
 function App() {
@@ -52,6 +53,10 @@ function App() {
 
       <div className='my-container'>
         <CarouselFunc />
+      </div>
+
+      <div className='three-container'>
+          <ThreeCarousel />
       </div>
     </div>
 

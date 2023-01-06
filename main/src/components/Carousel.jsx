@@ -16,7 +16,10 @@ function CarouselFunc() {
                     <p className='carousel-paragraph'>
                         {data.captionP}</p>
                 </Carousel.Caption>
+                <button className='carousel-shop-btn'><strong>Shop now</strong></button>
+                <button className='carousel-view-btn'><strong>View more</strong></button>
             </Carousel.Item >
+
         )
     })
     return (
@@ -25,8 +28,7 @@ function CarouselFunc() {
                 {img}
 
             </Carousel>
-            <button className='carousel-shop-btn'><strong>Shop now</strong></button>
-            <button className='carousel-view-btn'><strong>View more</strong></button>
+
         </div>
     );
 }
