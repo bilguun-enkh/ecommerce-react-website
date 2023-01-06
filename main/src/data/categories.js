@@ -1,6 +1,6 @@
 const categories = [
     {
-        title: 'Home',
+        title: 'Browse categories',
         position: 1,
         children: [{
             title: "Computer"

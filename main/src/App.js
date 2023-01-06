@@ -1,5 +1,5 @@
 import './App.css';
-import { Truck, GeoAlt, Heart, Person, CartFill} from 'react-bootstrap-icons';
+import { Truck, GeoAlt, Heart, Person, CartFill } from 'react-bootstrap-icons';
 import { Button, Dropdown, Navbar } from 'react-bootstrap'
 import MainMenu from './components/MainMenu';
 import CarouselFunc from './components/Carousel';
@@ -49,9 +49,9 @@ function App() {
         </div>
       </div>
 
-      
+
       <div className='my-container'>
-          <CarouselFunc />
+        <CarouselFunc />
       </div>
     </div>
 

@@ -25,8 +25,8 @@ function CarouselFunc() {
                 {img}
 
             </Carousel>
-            <button className='carousel-shop-btn btn btn-warning'>Shop now</button>
-            <button className='carousel-view-btn btn btn-light'>View more</button>
+            <button className='carousel-shop-btn'><strong>Shop now</strong></button>
+            <button className='carousel-view-btn'><strong>View more</strong></button>
         </div>
     );
 }

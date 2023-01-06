@@ -115,7 +115,6 @@
 
 .browser-container {
   background: #F4F4F4;
-
 }
 
 .browse-div {
@@ -133,6 +132,10 @@
 
 .menu-div {
   margin-right: 500px;
+}
+
+.dropdown-toggle::after {
+  margin-left: 10px !important;
 }
 
 .nav-link {
@@ -176,7 +179,6 @@
 
 .carousel-div {
   position: relative;
-  border: black 1px solid;
   height: 394px;
 }
 
@@ -205,25 +207,52 @@
 
 .carousel-indicators {
   justify-content: start !important;
-  height: 50px;
+  bottom: 10px !important;
+  left: 130px !important;
 }
 
-.carousel-dark .carousel-indicators [data-bs-target] {
-  background-color: #EDA415;
+.carousel-indicators>button {
+  border-radius: 50%;
+  width: 20px !important;
+  height: 20px !important;
+  border: 1px solid #ADADAD !important;
+  left: 100px !important;
+  background-color: white !important;
 }
-.carousel-header{
+
+.carousel-indicators .active {
+  background-color: #EDA415 !important;
+}
+
+.carousel-header {
   color: #1B5A7D;
+  font-size: 43px;
 }
+
 .carousel-paragraph {
   width: 400px;
 }
+
 .carousel-shop-btn {
   position: absolute;
   bottom: 70px;
   left: 220px;
+  width: 144px;
+  height: 61px;
+  background: #EDA415;
+  border-radius: 20px;
+  border: none;
+  color: white;
 }
+
 .carousel-view-btn {
   position: absolute;
   bottom: 70px;
-  left: 320px;
+  left: 400px;
+  background-color: white;
+  width: 144px;
+  height: 61px;
+  color: #316887;
+  border: 1px solid #316887;
+  border-radius: 20px;
 }
