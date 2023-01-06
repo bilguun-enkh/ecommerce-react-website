@@ -18,7 +18,7 @@ const carouselData = [
         url: "http://9to5mac.com/wp-content/uploads/sites/6/2013/08/bose-soundlink-mini-best-price-review.jpg",
         class: "d-block carousel-img",
         captionHeader: "SoundLink Mini II",
-        captionP: "The SoundLink Mini II Special Edition delivers full, natural sound with dramatically deeper bass than you’d expect from a speaker that fits in the palm of your hand. It also features a built-in microphone for taking calls, and makes easy wireless connections anytime, anywhere.",
+        captionP: "The SoundLink Mini II Special Edition delivers full, natural sound with dramatically deeper bass than you’d expect from a speaker that fits in the palm of your hand.",
         alt: 'soundlink mini'
     },
 ]

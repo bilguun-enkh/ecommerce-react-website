@@ -7,19 +7,15 @@ const handleDragStart = (e) => e.preventDefault();
 
 const items = carouselData.map(data => {
     return (
-        <div className='test123'>
-            <img src={data.url} className="test" />
+        <div className='slider-border'>
+            <img src={data.url} onDragStart={handleDragStart} role="presentation" className="test" />
         </div>)
 });
 
 export function ThreeCarousel() {
     return (
         <div>
-            <AliceCarousel mouseTracking items={items} responsive={{
-                1024: {
-                    items: 3,
-                }
-            }} />
+            <AliceCarousel mouseTracking items={items} responsive={{0: {items: 3,}}} />
         </div>
     )
 }
