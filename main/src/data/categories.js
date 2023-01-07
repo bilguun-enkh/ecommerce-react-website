@@ -1,16 +1,18 @@
 const categories = [
     {
-        title: 'Browse categories',
-        position: 1,
-        children: [{
-            title: "Computer"
-        },
-        {
-            title: "Camera"
-        },
-        {
-            title: "Speakers"
-        }]
+        title: 'Computers',
+    },
+    {
+        title: 'Laptops'
+    },
+    {
+        title: 'Cameras'
+    },
+    {
+        title: 'Tablets'
+    },
+    {
+        title: 'Smart Phones'
     }
 ]
 export default categories

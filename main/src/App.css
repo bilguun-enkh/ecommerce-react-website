@@ -260,13 +260,26 @@
 
 .three-container {
   margin-top: 100px !important;
-  width: 1200px;
+  width: 1300px;
   max-width: 100%;
   margin: auto;
 }
-.test{
-  width: 300px ;
-}
+
+
 .slider-border {
-  border: black 0.1px solid;
+  border: grey.1px solid;
+  border-radius: 15px;
+  width: 381.63px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slider-border>img {
+  height: 113px;
+}
+
+.slider-inner>h4 {
+  font-size: 20px;
 }
