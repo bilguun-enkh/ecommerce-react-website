@@ -268,7 +268,7 @@
 
 .slider-border {
   border: grey.1px solid;
-  border-radius: 15px;
+  border-radius: 20px;
   width: 381.63px;
   height: 150px;
   display: flex;
@@ -282,4 +282,27 @@
 
 .slider-inner>h4 {
   font-size: 20px;
+  color: #1B5A7D;
+}
+
+.slider-inner>h6 {
+  color: #1B5A7D;
+}
+
+.popular-products-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.test {
+  display: flex;
+  width: 595px;
+height: 45px;
+}
+.popular-btn {
+  background-color: white;
+  width: 139px;
+  height: 45px;
+  color: #316887;
+  border: 1px solid #316887;
+  border-radius: 20px;
 }

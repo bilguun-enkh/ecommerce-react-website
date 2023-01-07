@@ -5,6 +5,7 @@ import MainMenu from './components/MainMenu';
 import CarouselFunc from './components/Carousel';
 import { BrowseCategories } from './components/BrowseCategories';
 import { ThreeCarousel } from './components/ThreeCarousel';
+// import { PopularProducts } from './components/PopularProducts';
 
 
 function App() {
@@ -50,13 +51,16 @@ function App() {
         </div>
       </div>
 
-
       <div className='my-container'>
         <CarouselFunc />
       </div>
 
       <div className='three-container'>
           <ThreeCarousel />
+      </div>
+
+      <div className='my-container'>
+        {/* <PopularProducts />s */}
       </div>
     </div>
 
