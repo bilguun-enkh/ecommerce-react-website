@@ -5,7 +5,7 @@ import MainMenu from './components/MainMenu';
 import CarouselFunc from './components/Carousel';
 import { BrowseCategories } from './components/BrowseCategories';
 import { ThreeCarousel } from './components/ThreeCarousel';
-// import { PopularProducts } from './components/PopularProducts';
+import PopularProduct from './components/PopularProducts';
 
 
 function App() {
@@ -60,7 +60,7 @@ function App() {
       </div>
 
       <div className='my-container'>
-        {/* <PopularProducts />s */}
+        <PopularProduct />
       </div>
     </div>
 
