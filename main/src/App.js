@@ -7,6 +7,7 @@ import { BrowseCategories } from './components/BrowseCategories';
 import { ThreeCarousel } from './components/ThreeCarousel';
 import PopularProduct from './components/PopularProducts';
 import SaleComp from './components/SaleComp';
+import Speaker from './components/Speaker';
 
 
 function App() {
@@ -66,6 +67,10 @@ function App() {
 
       <div className="sale-container my-container">
         <SaleComp />
+      </div>
+
+      <div className='my-container'>
+        <Speaker />
       </div>
 
     </div>
