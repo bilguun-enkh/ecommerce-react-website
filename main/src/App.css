@@ -374,4 +374,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 495px;
+  margin-top: 51px;
+}
+.sales-flex-div {
+  display: flex;
+  justify-content: end;
 }
