@@ -6,11 +6,14 @@ import threeCarousel from '../data/threecarousel';
 const handleDragStart = (e) => e.preventDefault();
 
 const items = threeCarousel.map(data => {
+    function handleUpVote(props) {
+        console.log(props.captionHeader)
+    }
     return (
         <div className='slider-border'>
             <img src={data.url} onDragStart={handleDragStart} role="presentation" />
             <div className='slider-inner'>
-                <h4>{data.captionHeader} </h4>
+                <h4><a onClick={() => { handleUpVote(data) }} >{data.captionHeader} </a></h4>
                 <h6>({data.items})</h6>
             </div>
         </div>)

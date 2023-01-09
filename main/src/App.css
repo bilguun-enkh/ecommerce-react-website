@@ -294,6 +294,7 @@
   justify-content: space-between;
   margin-bottom: 55px;
 }
+
 .popular-products-div>h3 {
   color: #1B5A7D;
 }
@@ -323,12 +324,54 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 25px;
 }
 
 .popular-slider-border>img {
   height: 113px;
 }
-.popular-slider-border {
-  color: #1B5A7D;
-  text-align: left;
+
+.popular-h5 {
+  color: #316887;
+}
+
+.popular-slider-inner {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-cart {
+  color: white;
+  background: #EDA415;
+  border-radius: 491.769px;
+  width: 45px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alice-carousel__dots-item {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  width: 15px !important;
+  height: 15px !important;
+  border: 1px solid #ADADAD !important;
+  background-color: white !important;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #EDA415 !important;
+
+}
+
+.sale-container {
+  background-image: url("../public/SaleLaptop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 495px;
 }

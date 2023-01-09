@@ -1,6 +1,7 @@
 import products1 from "../data/popular"
 import threeCarousel from '../data/threecarousel';
 import AliceCarousel from "react-alice-carousel";
+import { Cart2 } from "react-bootstrap-icons";
 
 
 const handleDragStart = (e) => e.preventDefault();
@@ -9,15 +10,27 @@ const items = threeCarousel.map(data => {
     return (
         <div>
             <div className='popular-slider-border'>
-                <img src={data.url} onDragStart={handleDragStart} alt="pic" role="presentation" />
+                <img src={data.url} onDragStart={handleDragStart} alt="pic" />
                 <div className='popular-slider-inner'>
-                    <h4>{data.captionHeader} </h4>
+                    <div>
+                        <h5 className="popular-h5">{data.captionHeader} </h5>
+                        <h6>{data.price}</h6>
+                    </div>
+                    <span className="popular-cart">
+                        <Cart2 />
+                    </span>
                 </div>
             </div>
             <div className='popular-slider-border'>
-                <img src={data.url} onDragStart={handleDragStart} alt="pic" role="presentation" />
+                <img src={data.url} onDragStart={handleDragStart} alt="pic" />
                 <div className='popular-slider-inner'>
-                    <h4>{data.captionHeader} </h4>
+                    <div>
+                        <h5 className="popular-h5">{data.captionHeader} </h5>
+                        <h6>{data.price}</h6>
+                    </div>
+                    <span className="popular-cart">
+                        <Cart2 />
+                    </span>
                 </div>
             </div>
         </div>)
@@ -40,7 +53,7 @@ function PopularProduct() {
                 </div>
             </div>
             <div>
-                <AliceCarousel mouseTracking items={items} responsive={{ 0: { items: 4, } }} />
+                <AliceCarousel mouseTracking items={items} responsive={{ 0: { items: 4, } }} disableButtonsControls="none" />
             </div>
         </div>
     )

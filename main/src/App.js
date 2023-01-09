@@ -6,6 +6,7 @@ import CarouselFunc from './components/Carousel';
 import { BrowseCategories } from './components/BrowseCategories';
 import { ThreeCarousel } from './components/ThreeCarousel';
 import PopularProduct from './components/PopularProducts';
+import SaleComp from './components/SaleComp';
 
 
 function App() {
@@ -62,6 +63,11 @@ function App() {
       <div className='my-container'>
         <PopularProduct />
       </div>
+
+      <div className="sale-container my-container">
+        <SaleComp />
+      </div>
+
     </div>
 
 
