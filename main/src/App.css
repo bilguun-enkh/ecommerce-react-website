@@ -373,10 +373,63 @@
   background-image: url("../public/SaleLaptop.png");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 495px;
+  height: 440px;
   margin-top: 51px;
 }
+
 .sales-flex-div {
+  width: 668px;
+  height: 350px;
+  margin-left: auto;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.new-laptop {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #EDA415;
+  border-radius: 20px;
+  width: 134px;
+  height: 45px;
+}
+
+.sales-flex-div>h1 {
+  color: #2E8FC5;
+  font-size: 41px;
+}
+
+.shop-now {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background: #EDA415;
+  border-radius: 20px;
+  width: 134px;
+  height: 45px;
+}
+
+.speaker-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 96px;
+  width: 803px;
+  height: 505px;
+  border: 1px solid #B6B6B6;
+  border-radius: 20px;
+}
+
+.speaker-img {
+  width: 425px;
+  height: 416px;
 }
