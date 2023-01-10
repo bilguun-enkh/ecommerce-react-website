@@ -1,3 +1,4 @@
+import { Star, StarFill, StarHalf } from "react-bootstrap-icons"
 import speaker from "../data/speaker"
 
 export default function Speaker() {
@@ -19,6 +20,8 @@ export default function Speaker() {
                 <img src="speaker.png" className="speaker-img"></img>
                 <div>
                     <h5>JBL bar 2.1 deep bass</h5>
+                    <h6>$11.70</h6>
+                    <StarFill /> <StarFill /> <StarFill /> <StarHalf /> <Star/>
                 </div>
             </div>
         </div>
