@@ -1,6 +1,6 @@
 import './App.css';
 import { Truck, GeoAlt, Heart, Person, CartFill } from 'react-bootstrap-icons';
-import { Button} from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import MainMenu from './components/MainMenu';
 import CarouselFunc from './components/Carousel';
 import { BrowseCategories } from './components/BrowseCategories';
@@ -8,6 +8,10 @@ import { ThreeCarousel } from './components/ThreeCarousel';
 import PopularProduct from './components/PopularProducts';
 import SaleComp from './components/SaleComp';
 import Speaker from './components/Speaker';
+import Warranty from './components/Warranty';
+import EmployeesCard from './components/EmployeesCard';
+import SpacingTechLogo from './components/SpacingTechLogo';
+import LatestNews from './components/LatestNews';
 
 
 function App() {
@@ -58,7 +62,7 @@ function App() {
       </div>
 
       <div className='three-container'>
-          <ThreeCarousel />
+        <ThreeCarousel />
       </div>
 
       <div className='my-container'>
@@ -71,6 +75,22 @@ function App() {
 
       <div className='my-container'>
         <Speaker />
+      </div>
+
+      <div className='my-container'>
+        <Warranty />
+      </div>
+
+      <div className='my-container'>
+        <EmployeesCard />
+      </div>
+
+      <div className='my-container'>
+        <SpacingTechLogo />
+      </div>
+
+      <div className='my-container'>
+        <LatestNews />
       </div>
 
     </div>

@@ -1,27 +1,42 @@
-import { Star, StarFill, StarHalf } from "react-bootstrap-icons"
-import speaker from "../data/speaker"
+import { CartFill, Star, StarFill, StarHalf } from "react-bootstrap-icons"
 
 export default function Speaker() {
-    const speakerData = speaker.map(data => {
-        return (
-            <div className="speaker-div">
-                <img src={data.url} className="speaker-img"></img>
-                <div>
-                    <h5>{data.title}</h5>
-                    <h6>{data.cost}</h6>
-                </div>
-            </div>
-        )
-    })
 
     return (
-        <div>
-            <div className="speaker-div">
-                <img src="speaker.png" className="speaker-img"></img>
-                <div>
-                    <h5>JBL bar 2.1 deep bass</h5>
+        <div className="speaker-div">
+            <div className="speaker-first-div">
+                <img src="speaker.png" className="speaker-img" alt="speaker" />
+                <div className="speaker-big-div">
+                    <h5 className="blue">JBL bar 2.1 deep bass</h5>
                     <h6>$11.70</h6>
-                    <StarFill /> <StarFill /> <StarFill /> <StarHalf /> <Star/>
+                    <div>
+                        <StarFill /> <StarFill /> <StarFill /> <StarHalf /> <Star />
+                    </div>
+                    <div className="add-to-cart-btn">
+                        Add to cart
+                        <span className="popular-cart">
+                            <CartFill />
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div className="speaker-second-div">
+                <div className="speaker-small-div" >
+                    <img src="controller.png" className="controller-class" alt="controller"/>
+                    <div>
+                        <h5 className="blue">Play game</h5>
+                        <h6>$11.70</h6>
+                        <StarFill /> <StarFill /> <StarFill /> <StarHalf /> <Star />
+
+                    </div>
+                </div>
+                <div className="speaker-small-div">
+                    <img src="laptop.png" className="controller-class" alt="laptop" />
+                    <div>
+                        <h5 className="blue">Play game</h5>
+                        <h6>$11.70</h6>
+                        <StarFill /> <StarFill /> <StarFill /> <StarHalf /> <Star />
+                    </div>
                 </div>
             </div>
         </div>
