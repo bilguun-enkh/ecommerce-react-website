@@ -22,7 +22,7 @@ export default function LatestNews() {
                 <h5>View all</h5>
             </div>
             <div>
-                <AliceCarousel mouseTracking items={items} responsive={{ 0: { items: 2, } }} />
+                <AliceCarousel mouseTracking items={items} disableButtonsControls={"true"} responsive={{ 0: { items: 2, } }} />
             </div>
         </div>
     )
