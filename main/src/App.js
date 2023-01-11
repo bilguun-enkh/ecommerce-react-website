@@ -12,6 +12,7 @@ import Warranty from './components/Warranty';
 import EmployeesCard from './components/EmployeesCard';
 import SpacingTechLogo from './components/SpacingTechLogo';
 import LatestNews from './components/LatestNews';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -93,6 +94,9 @@ function App() {
         <LatestNews />
       </div>
 
+      <div className='footer-background'>
+        <Footer />
+      </div>
     </div>
 
 
