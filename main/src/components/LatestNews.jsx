@@ -3,7 +3,7 @@ import latestnews from "../data/latestnews";
 
 const items = latestnews.map(data => {
     return (
-        <div className="latest-news-slider">
+        <div className="latest-news-slider blue">
             <img src={data.url} alt="" />
             <div className="latest-news-text">
                 <h3>{data.header}</h3>
@@ -18,7 +18,7 @@ export default function LatestNews() {
     return (
         <div className="latest-div">
             <div className="d-flex justify-content-between blue">
-                <h3><strong>Latest New</strong></h3>
+                <h3 className="blue"><strong>Latest New</strong></h3>
                 <h5>View all</h5>
             </div>
             <div>
