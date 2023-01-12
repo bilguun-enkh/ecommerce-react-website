@@ -2,7 +2,7 @@ import products1 from "../data/popular"
 import threeCarousel from '../data/threecarousel';
 import AliceCarousel from "react-alice-carousel";
 import { Cart2 } from "react-bootstrap-icons";
-
+import ReactStars from "react-rating-stars-component";
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -20,6 +20,11 @@ const items = threeCarousel.map(data => {
                         <Cart2 />
                     </span>
                 </div>
+                <div>
+                    <ReactStars
+                        size={20}
+                        isHalf={true} />
+                </div>
             </div>
             <div className='popular-slider-border'>
                 <img src={data.url} onDragStart={handleDragStart} alt="pic" />
@@ -31,6 +36,11 @@ const items = threeCarousel.map(data => {
                     <span className="popular-cart">
                         <Cart2 />
                     </span>
+                </div>
+                <div>
+                    <ReactStars
+                        size={20}
+                        isHalf={true} />
                 </div>
             </div>
         </div>)

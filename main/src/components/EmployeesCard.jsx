@@ -22,7 +22,7 @@ export default function EmployeesCard() {
     })
     return (
         <div className="employee-div">
-            <AliceCarousel mouseTracking items={employeesData} responsive={{ 0: { items: 3, } }} />
+            <AliceCarousel mouseTracking items={employeesData} disableButtonsControls={true} responsive={{ 0: { items: 3, } }} />
         </div>
     )
 }

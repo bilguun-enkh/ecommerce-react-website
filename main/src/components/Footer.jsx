@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="footer-container">
             <div className="newsletter">
                 <div>
-                    <h2 className="blue">
+                    <h2 className="blue2">
 
                         <strong>Subscrible newsletter</strong>
                     </h2>
@@ -24,7 +24,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="footer-links blue">
+            <div className="footer-links blue2">
                 <div className="col">
                     <img src="footerlogo.png" alt="" className="footer-logo" />
                     <p>64 st james boulevard

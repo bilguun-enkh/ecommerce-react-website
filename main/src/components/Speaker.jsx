@@ -1,4 +1,5 @@
 import { CartFill, Star, StarFill, StarHalf } from "react-bootstrap-icons"
+import ReactStars from "react-rating-stars-component"
 
 export default function Speaker() {
 
@@ -7,10 +8,12 @@ export default function Speaker() {
             <div className="speaker-first-div">
                 <img src="speaker.png" className="speaker-img" alt="speaker" />
                 <div className="speaker-big-div">
-                    <h5 className="blue">JBL bar 2.1 deep bass</h5>
-                    <h6>$11.70</h6>
+                    <h5 className="blue m-0">JBL bar 2.1 deep bass</h5>
+                    <h6 className="m-0">$11.70</h6>
                     <div>
-                        <StarFill /> <StarFill /> <StarFill /> <StarHalf /> <Star />
+                    <ReactStars
+                        size={30}
+                        isHalf={true} />
                     </div>
                     <div className="add-to-cart-btn">
                         Add to cart
@@ -26,7 +29,9 @@ export default function Speaker() {
                     <div>
                         <h5 className="blue">Play game</h5>
                         <h6>$11.70</h6>
-                        <StarFill /> <StarFill /> <StarFill /> <StarHalf /> <Star />
+                        <ReactStars
+                        size={20}
+                        isHalf={true} />
 
                     </div>
                 </div>
@@ -35,7 +40,9 @@ export default function Speaker() {
                     <div>
                         <h5 className="blue">Play game</h5>
                         <h6>$11.70</h6>
-                        <StarFill /> <StarFill /> <StarFill /> <StarHalf /> <Star />
+                        <ReactStars
+                        size={20}
+                        isHalf={true} />
                     </div>
                 </div>
             </div>

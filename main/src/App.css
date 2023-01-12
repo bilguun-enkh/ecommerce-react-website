@@ -442,10 +442,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 37px;
-
   width: 254px;
-  height: 247px;
-
 }
 
 .speaker-second-div {
@@ -484,6 +481,10 @@
   color: #003F62;
 }
 
+.blue2 {
+  color: #1B5A7D;
+}
+
 .controller-class {
   height: 168px;
 }
@@ -514,6 +515,7 @@
 
 .employee-div {
   margin-top: 90px;
+  margin-bottom: 54px;
 }
 
 .employees-border {
@@ -567,6 +569,7 @@
 
 .latest-div {
   margin-top: 100px;
+  margin-bottom: 101px;
   display: flex;
   flex-direction: column;
 }
@@ -583,11 +586,15 @@
   border-radius: 20px;
 }
 
+.alice-carousel__stage-item {
+  margin-left: 10px !important;
+}
+
 .latest-news-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin-left: 20px;
   width: 265px;
   height: 187px;
 }

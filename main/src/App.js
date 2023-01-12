@@ -1,6 +1,5 @@
 import './App.css';
-import { Truck, GeoAlt, Heart, Person, CartFill } from 'react-bootstrap-icons';
-import { Button } from 'react-bootstrap'
+import NavBar from './components/NavBar';
 import MainMenu from './components/MainMenu';
 import CarouselFunc from './components/Carousel';
 import { BrowseCategories } from './components/BrowseCategories';
@@ -13,39 +12,18 @@ import EmployeesCard from './components/EmployeesCard';
 import SpacingTechLogo from './components/SpacingTechLogo';
 import LatestNews from './components/LatestNews';
 import Footer from './components/Footer';
+import SearchBar from './components/SearchBar';
 
 
 function App() {
   return (
     <div>
       <div className="my-container">
-
-        <div className="my-nav-bar">
-          <div>Need help? Call us: (+98) 0234 456 789</div>
-          <div>
-            <div className="nav-bar-2nd-div">
-              <span className="our-store"><GeoAlt />Our store</span>
-              <span className="track-order"><Truck />Track your order</span>
-            </div>
-          </div>
-        </div>
+        <NavBar />
       </div>
 
       <div className="searchContainer">
-        <div className="searchDiv">
-          <div className="logoDiv">
-            <img src="electronLogo.png" alt="electronlogo" className="searchDivLogo"></img>
-            <div className='searchBox'>
-              <input placeholder='Search any things' className="searchInput"></input>
-              <Button className="search-btn">Search</Button>
-            </div>
-          </div>
-          <div className='register'>
-            <span className='sign-in'><Person />Sign In</span>
-            <span><Heart /></span>
-            <span><CartFill /></span>
-          </div>
-        </div>
+        <SearchBar />
       </div>
 
       <div className='browser-container'>
