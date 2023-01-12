@@ -22,7 +22,7 @@ const items = threeCarousel.map(data => {
                 </div>
                 <div>
                     <ReactStars
-                        size={30}
+                        size={20}
                         isHalf={true} />
                 </div>
             </div>
@@ -39,7 +39,7 @@ const items = threeCarousel.map(data => {
                 </div>
                 <div>
                     <ReactStars
-                        size={30}
+                        size={20}
                         isHalf={true} />
                 </div>
             </div>
