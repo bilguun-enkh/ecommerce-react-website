@@ -7,6 +7,9 @@ import ReactStars from "react-rating-stars-component";
 const handleDragStart = (e) => e.preventDefault();
 
 const items = threeCarousel.map(data => {
+    function AddToCartBtn() {
+        setCounter(count + 1)
+      }
     return (
         <div>
             <div className='popular-slider-border'>
@@ -18,6 +21,7 @@ const items = threeCarousel.map(data => {
                     </div>
                     <span className="popular-cart">
                         <Cart2 />
+                        <button onClick={AddToCartBtn}>Add</button>
                     </span>
                 </div>
                 <div>

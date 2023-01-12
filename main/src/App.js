@@ -13,9 +13,14 @@ import SpacingTechLogo from './components/SpacingTechLogo';
 import LatestNews from './components/LatestNews';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
+import { useState } from 'react';
 
 
 function App() {
+  let [count, setCounter] = useState(0)
+  function AddToCartBtn() {
+    setCounter(count + 1)
+  }
   return (
     <div>
       <div className="my-container">
@@ -23,7 +28,7 @@ function App() {
       </div>
 
       <div className="searchContainer">
-        <SearchBar />
+        <SearchBar count={count} />
       </div>
 
       <div className='browser-container'>
@@ -31,7 +36,7 @@ function App() {
           <BrowseCategories />
           <MainMenu />
           <div className='browse-free-return'>
-            <p><a href='#'>30 Days Free Return</a></p> 
+            <p><a href='#'>30 Days Free Return</a></p>
           </div>
         </div>
       </div>
@@ -46,6 +51,7 @@ function App() {
 
       <div className='my-container'>
         <PopularProduct />
+        <button onClick={AddToCartBtn}>Click</button>
       </div>
 
       <div className="sale-container my-container">
