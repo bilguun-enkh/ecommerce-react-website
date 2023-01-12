@@ -1,4 +1,4 @@
-import { CartFill, Star, StarFill, StarHalf } from "react-bootstrap-icons"
+import { CartFill} from "react-bootstrap-icons"
 import ReactStars from "react-rating-stars-component"
 
 export default function Speaker() {

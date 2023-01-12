@@ -31,7 +31,7 @@ function App() {
           <BrowseCategories />
           <MainMenu />
           <div className='browse-free-return'>
-            <p>30 Days Free Return</p>
+            <p><a href='#'>30 Days Free Return</a></p> 
           </div>
         </div>
       </div>
