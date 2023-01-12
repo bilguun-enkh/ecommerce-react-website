@@ -178,6 +178,15 @@
   margin: 0;
 }
 
+.browse-free-return a {
+  text-decoration: none !important;
+  color: #003F62;
+}
+
+.browse-free-return a:hover {
+  cursor: pointer;
+}
+
 .carousel-div {
   position: relative;
   height: 394px;
@@ -630,6 +639,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-left: 60px;
   width: 1320px;
   height: 139px;
   background: #FFFFFF;
@@ -668,6 +678,7 @@
 }
 
 .footer-links {
+  margin-left: 120px;
   display: flex;
   justify-content: space-between;
 }
