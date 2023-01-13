@@ -1,19 +1,20 @@
 import products1 from "../data/popular"
 import threeCarousel from '../data/threecarousel';
 import AliceCarousel from "react-alice-carousel";
-import { Cart2 } from "react-bootstrap-icons";
+import { Cart2, Heart } from "react-bootstrap-icons";
 import ReactStars from "react-rating-stars-component";
 
 const handleDragStart = (e) => e.preventDefault();
 
 const items = threeCarousel.map(data => {
-    function AddToCartBtn() {
-        setCounter(count + 1)
-      }
+    function AddToWishlist(id) {
+        console.log(id)
+    }
     return (
         <div>
             <div className='popular-slider-border'>
                 <img src={data.url} onDragStart={handleDragStart} alt="pic" />
+                <button onClick={() => AddToWishlist(data.id)} className="add-to-wishlist-btn"><Heart /></button>
                 <div className='popular-slider-inner'>
                     <div>
                         <h5 className="popular-h5">{data.captionHeader} </h5>
@@ -21,7 +22,6 @@ const items = threeCarousel.map(data => {
                     </div>
                     <span className="popular-cart">
                         <Cart2 />
-                        <button onClick={AddToCartBtn}>Add</button>
                     </span>
                 </div>
                 <div>

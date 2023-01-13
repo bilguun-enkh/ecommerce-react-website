@@ -12,8 +12,8 @@ import EmployeesCard from './components/EmployeesCard';
 import SpacingTechLogo from './components/SpacingTechLogo';
 import LatestNews from './components/LatestNews';
 import Footer from './components/Footer';
-import SearchBar from './components/SearchBar';
 import { useState } from 'react';
+import SearchBar from './components/SearchBar';
 
 
 function App() {
@@ -87,4 +87,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

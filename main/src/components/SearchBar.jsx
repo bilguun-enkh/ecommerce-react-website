@@ -1,8 +1,10 @@
 import { Heart, Person, Cart } from 'react-bootstrap-icons';
 import { Button } from 'react-bootstrap'
-import { useState } from 'react';
-function SearchBar({count}) {
+import WishlistDiv from './WishlistDiv';
+import ToggleVisibility from './ToggleWishlist';
+function SearchBar({ count }) {
     console.log(count)
+
     return (
         <div className="searchDiv">
             <div className="logoDiv">
@@ -14,8 +16,10 @@ function SearchBar({count}) {
             </div>
             <div className='register'>
                 <span className='sign-in'><Person />Sign In</span>
-                <span><Heart /></span>
-                <span><Cart />{count}</span>
+                <ToggleVisibility>
+                    <WishlistDiv />
+                </ToggleVisibility>
+                <span className='cart-count'><Cart />{count}</span>
             </div>
         </div>
     )
