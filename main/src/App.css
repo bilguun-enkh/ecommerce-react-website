@@ -114,6 +114,10 @@
   align-items: center;
 }
 
+.component-container {
+  position: relative;
+}
+
 .wishlist-btn {
   color: white;
   background: none;
@@ -123,8 +127,8 @@
 .wishlist-div {
   color: black;
   position: absolute;
-  top: 150px;
-  right: 390px;
+  top: 34px;
+  right: -137px;
   width: 300px;
   height: 200px;
   border: #3A3A3A solid 1px;
@@ -380,12 +384,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#EDA415;
+  background-color: #EDA415;
   color: white;
   width: 25px;
   height: 25px;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 
 .popular-h5 {
@@ -408,6 +413,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .alice-carousel__dots-item {
@@ -532,6 +538,7 @@
   border-radius: 19.6707px;
   width: 204.58px;
   height: 60px;
+  cursor: pointer;
 }
 
 .blue {
