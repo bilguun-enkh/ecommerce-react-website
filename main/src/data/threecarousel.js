@@ -7,6 +7,7 @@ const threeCarousel = [
         alt: "nikon camera",
         price: "$11,40",
         items: '4 items',
+        id: 1,
 
     },
     {
@@ -17,6 +18,7 @@ const threeCarousel = [
         alt: "macbook pro",
         price: "$11,40",
         items: '7 items',
+        id: 2,
     },
     {
         url: "http://9to5mac.com/wp-content/uploads/sites/6/2013/08/bose-soundlink-mini-best-price-review.jpg",
@@ -26,6 +28,7 @@ const threeCarousel = [
         alt: 'soundlink mini',
         price: "$11,40",
         items: '9 items',
+        id: 3,
     },
     {
         url: "https://m.media-amazon.com/images/I/71Wkk4n9olL._AC_SL1500_.jpg",
@@ -35,6 +38,7 @@ const threeCarousel = [
         alt: 'galaxy phone',
         price: "$11,40",
         items: '2 items',
+        id: 4,
     },
     {
         url: "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$",
@@ -44,6 +48,7 @@ const threeCarousel = [
         alt: 'playstation 5',
         price: "$11,40",
         items: '2 items',
+        id: 5,
     },
     {
         url: "https://www.apple.com/v/ipad-10.9/b/images/overview/hero/hero__ecv967jz1y82_large.jpg",
@@ -53,6 +58,7 @@ const threeCarousel = [
         alt: 'tablet ipad',
         price: "$11,40",
         items: '5 items',
+        id: 6,
     },
 ]
 export default threeCarousel
