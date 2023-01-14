@@ -17,13 +17,9 @@ import SearchBar from './components/SearchBar';
 
 
 function App() {
-  const [count, setCounter] = useState(0)
-  const [wishlist, setWishlist] = useState(0)
+  let [count, setCounter] = useState(0)
   function AddToCartBtn() {
     setCounter(count + 1)
-  }
-  function AddToWishlist() {
-    setWishlist(wishlist + 1)
   }
   return (
     <div>
@@ -32,13 +28,16 @@ function App() {
       </div>
 
       <div className="searchContainer">
-        <SearchBar count={count} wishlist={wishlist} />
+        <SearchBar count={count} />
       </div>
 
       <div className='browser-container'>
         <div className='browse-div'>
           <BrowseCategories />
           <MainMenu />
+          <div className='browse-free-return'>
+            <p><a href='#'>30 Days Free Return</a></p>
+          </div>
         </div>
       </div>
 
@@ -51,7 +50,8 @@ function App() {
       </div>
 
       <div className='my-container'>
-        <PopularProduct AddToCartBtn={AddToCartBtn} AddToWishlist={AddToWishlist} />
+        <PopularProduct />
+        <button onClick={AddToCartBtn}>Click</button>
       </div>
 
       <div className="sale-container my-container">
@@ -59,7 +59,7 @@ function App() {
       </div>
 
       <div className='my-container'>
-        <Speaker  AddToCartBtn={AddToCartBtn}/>
+        <Speaker />
       </div>
 
       <div className='my-container'>
