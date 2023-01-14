@@ -15,10 +15,15 @@ export default function MainMenu() {
         )
     })
     return (
-        <div className='menu-div'>
-            <Navbar expand='lg'>
-                {subMenus}
-            </Navbar>
-        </div>
+        <>
+            <div className='menu-div'>
+                <Navbar expand='lg'>
+                    {subMenus}
+                </Navbar>
+            </div>
+            <div className='browse-free-return'>
+                <p><a href='#'>30 Days Free Return</a></p>
+            </div>
+        </>
     )
 }

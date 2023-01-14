@@ -2,7 +2,7 @@ import { Heart, Person, Cart } from 'react-bootstrap-icons';
 import { Button } from 'react-bootstrap'
 import WishlistDiv from './WishlistDiv';
 import ToggleVisibility from './ToggleWishlist';
-function SearchBar({ count }) {
+function SearchBar({ count, wishlist }) {
     console.log(count)
 
     return (
@@ -19,6 +19,7 @@ function SearchBar({ count }) {
                 <ToggleVisibility>
                     <WishlistDiv />
                 </ToggleVisibility>
+                    {wishlist}
                 <span className='cart-count'><Cart />{count}</span>
             </div>
         </div>
