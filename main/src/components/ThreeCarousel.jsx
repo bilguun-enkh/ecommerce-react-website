@@ -15,7 +15,7 @@ const items = threeCarousel.map(data => {
     return (
         <div className='slider-border'>
             <img src={data.url} onDragStart={handleDragStart} role="presentation" />
-            {/* <Example /> */}
+            <Example />
             <div className='slider-inner'>
                 <h4><a onClick={() => { handleUpVote(data) }} >{data.captionHeader} </a></h4>
                 <h6>({data.items})</h6>

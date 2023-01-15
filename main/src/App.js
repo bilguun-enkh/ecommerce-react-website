@@ -35,9 +35,6 @@ function App() {
         <div className='browse-div'>
           <BrowseCategories />
           <MainMenu />
-          <div className='browse-free-return'>
-            <p><a href='#'>30 Days Free Return</a></p>
-          </div>
         </div>
       </div>
 
