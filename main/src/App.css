@@ -8,6 +8,17 @@
   margin: auto;
 }
 
+.form-container {
+  width: 450px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.register-btn {
+  background: #EDA415 !important;
+  border: none !important;
+}
+
 .my-nav-bar {
   display: flex;
   justify-content: space-between;
@@ -652,6 +663,10 @@
 
 .alice-carousel__stage-item {
   margin-left: 10px !important;
+}
+
+.react-stars {
+  margin-right: 70px;
 }
 
 .latest-news-text {

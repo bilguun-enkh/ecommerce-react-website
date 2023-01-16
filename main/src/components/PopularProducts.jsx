@@ -6,7 +6,7 @@ import ReactStars from "react-rating-stars-component";
 
 const handleDragStart = (e) => e.preventDefault();
 
-function PopularProduct({AddToCartBtn}) {
+function PopularProduct({ AddToCartBtn }) {
     const productsData = products1.map(data => {
         return (
             <button className="popular-btn"><strong>{data.title}</strong></button>
@@ -41,7 +41,7 @@ function PopularProduct({AddToCartBtn}) {
                                         <Cart2 />
                                     </span>
                                 </div>
-                                <div>
+                                <div className="react-stars">
                                     <ReactStars
                                         size={20}
                                         isHalf={true} />
@@ -59,7 +59,7 @@ function PopularProduct({AddToCartBtn}) {
                                         <Cart2 />
                                     </span>
                                 </div>
-                                <div>
+                                <div className="react-stars">
                                     <ReactStars
                                         size={20}
                                         isHalf={true} />
