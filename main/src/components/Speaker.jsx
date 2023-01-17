@@ -1,7 +1,7 @@
 import { Cart2 } from "react-bootstrap-icons"
 import ReactStars from "react-rating-stars-component"
 
-export default function Speaker(AddToCartBtn) {
+export default function Speaker({AddToCartBtn}) {
 
     return (
         <div className="speaker-div">
@@ -15,7 +15,7 @@ export default function Speaker(AddToCartBtn) {
                             size={30}
                             isHalf={true} />
                     </div>
-                    <div className="add-to-cart-btn">
+                    <div className="add-to-cart-btn" onClick={AddToCartBtn}>
                         Add to cart
                         <span className="popular-cart" onClick={AddToCartBtn}>
                             <Cart2 />

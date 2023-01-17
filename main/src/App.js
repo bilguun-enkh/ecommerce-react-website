@@ -1,8 +1,9 @@
 import './App.css';
 import { useState } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
-import Register from './components/Register';
+import Register from './components/SignUp';
 import Home from './components/Home';
+import LogIn from './components/LogIn';
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<LogIn />} />
+
       </Routes>
     </div>
 

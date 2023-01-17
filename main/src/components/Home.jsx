@@ -56,7 +56,7 @@ export default function Home() {
             </div>
 
             <div className='my-container'>
-                <Speaker />
+                <Speaker AddToCartBtn={AddToCartBtn} />
             </div>
 
             <div className='my-container'>

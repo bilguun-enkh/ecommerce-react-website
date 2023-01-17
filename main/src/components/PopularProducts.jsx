@@ -13,7 +13,6 @@ function PopularProduct({ AddToCartBtn }) {
         )
     })
 
-
     return (
         <div>
             <div className="popular-products-div">

@@ -16,7 +16,7 @@
 
 .register-btn {
   background: #EDA415 !important;
-  border: none !important;  
+  border: none !important;
 }
 
 .my-nav-bar {
@@ -124,6 +124,19 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.sign-in a {
+  text-decoration: none;
+  color: white;
+}
+
+.sign-in-link {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .component-container {
   position: relative;

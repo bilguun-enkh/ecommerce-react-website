@@ -16,7 +16,11 @@ function SearchBar({ count, wishlist }) {
                 </div>
             </div>
             <div className='register'>
-                <span className='sign-in'><Person /><Link to={'/register'}>Sign In</Link></span>
+                <span className='sign-in'>
+                    <Link className='sign-in-link' to={'/login'}>
+                        <Person /> Sign In
+                    </Link>
+                </span>
                 <ToggleVisibility>
                     <WishlistDiv />
                 </ToggleVisibility>
