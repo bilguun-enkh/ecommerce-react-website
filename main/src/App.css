@@ -8,6 +8,17 @@
   margin: auto;
 }
 
+.form-container {
+  width: 450px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.register-btn {
+  background: #EDA415 !important;
+  border: none !important;
+}
+
 .my-nav-bar {
   display: flex;
   justify-content: space-between;
@@ -113,6 +124,19 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.sign-in a {
+  text-decoration: none;
+  color: white;
+}
+
+.sign-in-link {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .component-container {
   position: relative;
@@ -652,6 +676,10 @@
 
 .alice-carousel__stage-item {
   margin-left: 10px !important;
+}
+
+.react-stars {
+  margin-right: 70px;
 }
 
 .latest-news-text {
