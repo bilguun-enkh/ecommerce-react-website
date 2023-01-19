@@ -708,6 +708,24 @@
   background: #E2F4FF;
 }
 
+.footer-email {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  width: 250px;
+  border: none;
+  font-size: 14px;
+  height: 21px;
+  background-color: #EDA415;
+}
+
+.footer-email::placeholder {
+  color: white;
+}
+
+.footer-email:focus {
+  border: none;
+  outline: none;
+}
+
 .footer-container {
   display: flex;
   flex-direction: column;

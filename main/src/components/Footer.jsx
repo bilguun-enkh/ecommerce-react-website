@@ -1,4 +1,10 @@
-import { Facebook, Google, Headset, Send, Whatsapp } from "react-bootstrap-icons";
+import {
+    Facebook,
+    Google,
+    Headset,
+    Send,
+    Whatsapp,
+} from "react-bootstrap-icons"
 
 export default function Footer() {
     return (
@@ -6,12 +12,15 @@ export default function Footer() {
             <div className="newsletter">
                 <div>
                     <h2 className="blue2">
-
                         <strong>Subscrible newsletter</strong>
                     </h2>
                 </div>
                 <div className="newsletter-email">
-                    <h6>Email address</h6>
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        className="footer-email"
+                    />
                     <Send />
                 </div>
                 <div className="call-us">
@@ -19,7 +28,7 @@ export default function Footer() {
                         <Headset className="icon-50px" />
                     </div>
                     <div className="d-flex flex-column">
-                        <p className="m-0" >Call us 24/7:</p>
+                        <p className="m-0">Call us 24/7:</p>
                         <p className="m-0">(+62) 0123 567 789</p>
                     </div>
                 </div>
@@ -27,9 +36,11 @@ export default function Footer() {
             <div className="footer-links blue2">
                 <div className="col">
                     <img src="footerlogo.png" alt="" className="footer-logo" />
-                    <p>64 st james boulevard
+                    <p>
+                        64 st james boulevard
                         <br />
-                        hoswick , ze2 7zj</p>
+                        hoswick , ze2 7zj
+                    </p>
                     <hr />
                     <div className="icon-25px d-flex justify-content-evenly">
                         <Google />

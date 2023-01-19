@@ -5,11 +5,23 @@ import NavBar from "./NavBar"
 import { BrowseCategories } from "./BrowseCategories"
 import MainMenu from "./MainMenu"
 import Footer from "./Footer"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import { ToastContainer, toast } from "react-toastify"
 
-export default function Register() {
+export default function Register({}) {
+    const navigate = useNavigate()
     function handleSubmit() {
-        console.log(1)
+        toast.success("Sign up complete!", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        })
+        // navigate("/login")
     }
     return (
         <div>
@@ -18,7 +30,19 @@ export default function Register() {
             </div>
 
             <div className="searchContainer">
-                <SearchBar />
+                {/* <SearchBar /> */}
+                <ToastContainer
+                    position="top-center"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="light"
+                />
             </div>
 
             <div className="browser-container">
@@ -29,14 +53,22 @@ export default function Register() {
             </div>
             <div className="form-container">
                 <h2 className="my-5">Sign up</h2>
-                <Form onSubmit={handleSubmit}>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form>
+                    <Form.Group className="mb-3" controlId="formBasicName">
                         <Form.Label>Name*</Form.Label>
-                        <Form.Control type="email" placeholder="Enter name" />
+                        <Form.Control
+                            type="text"
+                            placeholder="Enter name"
+                            name="name"
+                        />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email*</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control
+                            type="email"
+                            placeholder="Enter email"
+                            name="email"
+                        />
                     </Form.Group>
 
                     <Form.Group className="mb-2" controlId="formBasicPassword">
@@ -44,6 +76,7 @@ export default function Register() {
                         <Form.Control
                             type="password"
                             placeholder="Create a password"
+                            name="password"
                         />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
@@ -65,7 +98,11 @@ export default function Register() {
                     </Form.Group>
 
                     <div className="d-grid gap-2">
-                        <Button className="register-btn" size="lg">
+                        <Button
+                            className="register-btn"
+                            size="lg"
+                            onClick={handleSubmit}
+                        >
                             Create account
                         </Button>
                     </div>

@@ -1,11 +1,7 @@
 import { Heart, Person, Cart } from "react-bootstrap-icons"
 import { Button } from "react-bootstrap"
-import WishlistDiv from "./WishlistDiv"
-import ToggleVisibility from "./ToggleWishlist"
 import { Link } from "react-router-dom"
-function SearchBar({ count, wishlist }) {
-    console.log(count)
-
+function SearchBar({ count, wishlist, setWishlist }) {
     return (
         <div className="searchDiv">
             <div className="logoDiv">
@@ -30,10 +26,29 @@ function SearchBar({ count, wishlist }) {
                         <Person /> Sign In
                     </Link>
                 </span>
-                <ToggleVisibility>
-                    <WishlistDiv />
-                </ToggleVisibility>
-                {wishlist}
+                {/* {wishlist.length} */}
+                <div>
+                    <div>
+                        {wishlist.map((w, index) => {
+                            return (
+                                <div>
+                                    <div>{w.name}</div>
+                                    <button
+                                        onClick={() => {
+                                            setWishlist(
+                                                wishlist.filter(
+                                                    (wish) => wish.id !== w.id
+                                                )
+                                            )
+                                        }}
+                                    >
+                                        X
+                                    </button>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
                 <span className="cart-count">
                     <Cart />
                     {count}
