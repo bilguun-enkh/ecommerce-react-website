@@ -14,6 +14,9 @@ import LatestNews from "../components/LatestNews"
 import Footer from "../components/Footer"
 import SearchBar from "../components/SearchBar"
 import { useState } from "react"
+import LogIn from '../components/LogIn';
+import Register from '../components/SignUp';
+import { Route, Routes } from "react-router-dom"
 
 export default function Home() {
     const [wishlist, setWishlist] = useState([])
@@ -86,6 +89,10 @@ export default function Home() {
             <div className="footer-background">
                 <Footer />
             </div>
+            <Routes>
+                <Route path='/register' element={<Register />} />
+                <Route path='/login' element={<LogIn />} />
+            </Routes>
         </div>
     )
 }

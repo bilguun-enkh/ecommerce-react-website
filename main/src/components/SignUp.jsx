@@ -7,8 +7,9 @@ import MainMenu from "./MainMenu"
 import Footer from "./Footer"
 import { Link, useNavigate } from "react-router-dom"
 import { ToastContainer, toast } from "react-toastify"
+import SearchBarForLogin from "./SearchBarForLogin"
 
-export default function Register({}) {
+export default function Register({ }) {
     const navigate = useNavigate()
     function handleSubmit() {
         toast.success("Sign up complete!", {
@@ -31,6 +32,7 @@ export default function Register({}) {
 
             <div className="searchContainer">
                 {/* <SearchBar /> */}
+                <SearchBarForLogin />
                 <ToastContainer
                     position="top-center"
                     autoClose={5000}

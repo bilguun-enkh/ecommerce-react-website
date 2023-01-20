@@ -143,9 +143,9 @@
 }
 
 .wishlist-btn {
-  color: white;
-  background: none;
-  border: none;
+  color: white !important;
+  background: none !important;
+  border: none !important;
 }
 
 .wishlist-div {

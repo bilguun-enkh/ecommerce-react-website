@@ -6,6 +6,7 @@ import { BrowseCategories } from "./BrowseCategories"
 import MainMenu from "./MainMenu"
 import Footer from "./Footer"
 import { Link } from "react-router-dom"
+import SearchBarForLogin from "./SearchBarForLogin"
 
 export default function LogIn() {
     return (
@@ -14,7 +15,10 @@ export default function LogIn() {
                 <NavBar />
             </div>
 
-            <div className="searchContainer">{/* <SearchBar /> */}</div>
+            <div className="searchContainer">
+                {/* <SearchBar /> */}
+                <SearchBarForLogin />
+            </div>
 
             <div className="browser-container">
                 <div className="browse-div">

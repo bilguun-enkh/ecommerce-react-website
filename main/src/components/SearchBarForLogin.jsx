@@ -2,7 +2,7 @@ import { Heart, Person, Cart } from "react-bootstrap-icons"
 import { Button } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { Dropdown } from 'react-bootstrap'
-function SearchBar({ count, wishlist, setWishlist }) {
+function SearchBarForLogin({ count, wishlist, setWishlist }) {
     return (
         <div className="searchDiv">
             <div className="logoDiv">
@@ -27,8 +27,8 @@ function SearchBar({ count, wishlist, setWishlist }) {
                         <Person /> Sign In
                     </Link>
                 </span>
-                <Dropdown>
-                    <Dropdown.Toggle id="dropdown-basic" className="wishlist-btn">
+                {/* <Dropdown>
+                    <Dropdown.Toggle id="dropdown-basic">
                         {wishlist.length}
                         <Heart />
                     </Dropdown.Toggle>
@@ -55,14 +55,14 @@ function SearchBar({ count, wishlist, setWishlist }) {
                             )
                         })}
                         </Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
+                    </Dropdown.Menu> */}
+                {/* </Dropdown> */}
                 <span className="cart-count">
                     <Cart />
                     {count}
                 </span>
             </div>
-        </div>
+        </div >
     )
 }
-export default SearchBar
+export default SearchBarForLogin
