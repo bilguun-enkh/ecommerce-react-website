@@ -1,7 +1,6 @@
-import { Heart, Person, Cart } from "react-bootstrap-icons"
+import { Person, Cart } from "react-bootstrap-icons"
 import { Button } from "react-bootstrap"
 import { Link } from "react-router-dom"
-import { Dropdown } from 'react-bootstrap'
 function SearchBarForLogin({ count, wishlist, setWishlist }) {
     return (
         <div className="searchDiv">
