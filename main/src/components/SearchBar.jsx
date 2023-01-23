@@ -29,8 +29,8 @@ function SearchBar({ count, wishlist, setWishlist }) {
                 </span>
                 <Dropdown>
                     <Dropdown.Toggle id="dropdown-basic" className="wishlist-btn">
+                        <Heart className="mx-2" />
                         {wishlist.length}
-                        <Heart />
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                         <Dropdown.Item href="#/action-1">{wishlist.map((w, index) => {

@@ -72,7 +72,7 @@ function PopularProduct({ AddToCartBtn, wishlist, setWishlist }) {
                                         onClick={() => AddToWishlist(data.id)}
                                         className="add-to-wishlist-btn"
                                     >
-                                        <Heart />
+                                        {liked ? <Heart /> : <HeartFill />}
                                     </button>
                                     <div className="popular-slider-inner">
                                         <div>

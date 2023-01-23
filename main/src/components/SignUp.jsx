@@ -1,6 +1,5 @@
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
-import SearchBar from "./SearchBar"
 import NavBar from "./NavBar"
 import { BrowseCategories } from "./BrowseCategories"
 import MainMenu from "./MainMenu"
