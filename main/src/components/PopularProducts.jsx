@@ -3,10 +3,12 @@ import threeCarousel from "../data/threecarousel"
 import AliceCarousel from "react-alice-carousel"
 import { Cart2, Heart, HeartFill } from "react-bootstrap-icons"
 import ReactStars from "react-rating-stars-component"
+import { useState } from "react"
 
 const handleDragStart = (e) => e.preventDefault()
 
 function PopularProduct({ AddToCartBtn, wishlist, setWishlist }) {
+    const [isLiked, setIsLiked] = useState(false)
     const productsData = products1.map((data) => {
         return (
             <button className="popular-btn">
@@ -28,6 +30,7 @@ function PopularProduct({ AddToCartBtn, wishlist, setWishlist }) {
                         function AddToWishlist(id) {
                             if (id === data.id) {
                                 setWishlist([...wishlist, data])
+                                setIsLiked(!isLiked)
                             }
                         }
                         return (
@@ -42,7 +45,7 @@ function PopularProduct({ AddToCartBtn, wishlist, setWishlist }) {
                                         onClick={() => AddToWishlist(data.id)}
                                         className="add-to-wishlist-btn"
                                     >
-                                        {liked ? <Heart /> : <HeartFill />}
+                                        {isLiked ? <HeartFill /> : <Heart />}
                                     </button>
                                     <div className="popular-slider-inner">
                                         <div>
@@ -72,7 +75,7 @@ function PopularProduct({ AddToCartBtn, wishlist, setWishlist }) {
                                         onClick={() => AddToWishlist(data.id)}
                                         className="add-to-wishlist-btn"
                                     >
-                                        {liked ? <Heart /> : <HeartFill />}
+                                        {isLiked ? <HeartFill /> : <Heart />}
                                     </button>
                                     <div className="popular-slider-inner">
                                         <div>

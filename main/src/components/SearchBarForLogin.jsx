@@ -56,10 +56,10 @@ function SearchBarForLogin({ count, wishlist, setWishlist }) {
                         </Dropdown.Item>
                     </Dropdown.Menu> */}
                 {/* </Dropdown> */}
-                <span className="cart-count">
+                {/* <span className="cart-count">
                     <Cart />
                     {count}
-                </span>
+                </span> */}
             </div>
         </div >
     )
